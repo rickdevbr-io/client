@@ -6,7 +6,7 @@ spring:
     name: 'client'
     
   datasource:
-    url: jdbc:postgres://zllsaacohshilx:8c95524b0f2118147cd75208c5dc4f0785d5e016449aaacfb82d0ca6a260cf36@ec2-3-231-241-17.compute-1.amazonaws.com:5432/d71r6sfm2otloh
+    url: jdbc:postgres://ec2-3-231-241-17.compute-1.amazonaws.com:5432/d71r6sfm2otloh
     username: zllsaacohshilx
     password: 8c95524b0f2118147cd75208c5dc4f0785d5e016449aaacfb82d0ca6a260cf36
     hikari:
