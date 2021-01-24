@@ -11,7 +11,7 @@
 	<groupId>br.com.company</groupId>
 	<artifactId>client</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>client</name>
 	<description>Customer registration</description>
 	<properties>
@@ -118,7 +118,8 @@
 			  <configuration>
 			  	<appName>clientrickdev</appName>
 				<processTypes>
-				   <web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web>
+				   <web>java -Dserver.port=$PORT -Dspring.profiles.active=prod -jar target/client-0.0.1-SNAPSHOT.jar</web>
+				   <!--  <web>java -Dserver.port=$PORT -Dspring.profiles.active=prod $JAVA_OPTS -cp target/classes:target/dependency/* ClientApplication</web> -->
 				</processTypes>
 			   </configuration>			  
 			</plugin>			
