@@ -10,6 +10,6 @@ create table tb_address_addr(
 	st_state varchar(30) NOT NULL,
 	st_country varchar(30) NOT NULL,
 	dt_created_date timestamp NOT NULL,
-	dt_modified_date timestamp NOT NULL,
+	dt_modified_date timestamp NULL,
 	CONSTRAINT tb_address_pkey PRIMARY KEY (id_address)
 );

@@ -1,4 +1,4 @@
-package br.com.company.client.erros;
+package br.com.company.client.exceptions;
 
 import org.springframework.http.HttpStatus;
 

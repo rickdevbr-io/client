@@ -6,7 +6,7 @@ import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Service;
 
-import br.com.company.client.erros.NotFoundException;
+import br.com.company.client.exceptions.NotFoundException;
 import br.com.company.client.model.Client;
 import br.com.company.client.model.ClientRepository;
 import lombok.RequiredArgsConstructor;
@@ -32,6 +32,7 @@ public class ClientService {
 		return clientRepository.save(client);
 	}
 	
+	@Transactional
 	public void deleteById (Long id) {
 		clientRepository.deleteById(id);
 	}

@@ -1,7 +1,6 @@
 package br.com.company.client.controller.v1;
 
 import java.util.Date;
-import java.util.List;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,13 +11,17 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ClientDto {
+public class AddressDto {
 
 	private Long id;
-	private String name;
-	private String identification;
+	private Long clientId;
+	private String street;
+	private String complement;
+	private String neighbordhood;
+	private String city;
+	private String state;
+	private String country;
 	private Date createdDate;
 	private Date modifiedDate;
-	private List<AddressDto> addresss;
 	
 }

@@ -2,7 +2,6 @@ package br.com.company.client.controller.v1;
 
 import java.util.List;
 
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -32,7 +31,7 @@ public class ClientController {
 	}
 	
 	@PostMapping("/save")
-	public ClientDto saveClient(@RequestBody(required = false) @Validated ClientDto client) {
+	public ClientDto saveClient(@RequestBody(required = false) ClientDto client) {
 		return clientFacade.saveClient(client);
 	}
 	
