@@ -6,9 +6,9 @@ spring:
     name: 'client'
     
   datasource:
-    url: postgres://qpxtwparcprxii:4e5ffecb1f16cb5ce5ff301e9c4aeec64ac8cab0340402e020d17b3be37fad91@ec2-52-204-113-104.compute-1.amazonaws.com:5432/d6q5fct0gqbru6
-    username: qpxtwparcprxii
-    password: 4e5ffecb1f16cb5ce5ff301e9c4aeec64ac8cab0340402e020d17b3be37fad91
+    url: jdbc:postgres://zllsaacohshilx:8c95524b0f2118147cd75208c5dc4f0785d5e016449aaacfb82d0ca6a260cf36@ec2-3-231-241-17.compute-1.amazonaws.com:5432/d71r6sfm2otloh
+    username: zllsaacohshilx
+    password: 8c95524b0f2118147cd75208c5dc4f0785d5e016449aaacfb82d0ca6a260cf36
     hikari:
       maximum-pool-size: 3
 
