@@ -1,7 +1,7 @@
 # About :blue_book:
 A POC was developed within the context: "customer registration and address". The code is structured in MVC whose packages are separated by business context, where the coding was done following the S (Single Responsibility Principle) and O (Open Closed Principle) principles of the O.O paradigm. For familiarity, the adopted language was java 8 with maven connecting to Postgresql, an open source relational bank. To facilitate the management of bank scripts Flyway was chosen and for API documentation Swagger. To practice the idea of low code Lombok was used together with SpringBoot.
 
-# Tech Stack :clipboard:
+# Tech Stack :clipboard: 
 - JUnit4
 - Java 8
 - Maven
