@@ -11,7 +11,7 @@
 	<groupId>br.com.company</groupId>
 	<artifactId>client</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>client</name>
 	<description>Customer registration</description>
 	<properties>
@@ -79,6 +79,24 @@
 		</dependency>		
 	</dependencies>
 
+	<profiles>
+		<profile>
+			<id>local</id>
+			<properties>
+				<activatedProperties>local</activatedProperties>
+			</properties>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+		<profile>
+			<id>prod</id>
+			<properties>
+				<activatedProperties>prod</activatedProperties>
+			</properties>
+		</profile>
+	</profiles>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -95,5 +113,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
+	
 </project>

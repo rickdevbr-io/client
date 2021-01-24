@@ -4,14 +4,13 @@ server:
 spring:
   application:
     name: 'client'
-
-  profiles:
-    active: @activatedProperties@
-        
+    
   datasource:
-    driverClassName: org.postgresql.Driver
+    url: postgres://qpxtwparcprxii:4e5ffecb1f16cb5ce5ff301e9c4aeec64ac8cab0340402e020d17b3be37fad91@ec2-52-204-113-104.compute-1.amazonaws.com:5432/d6q5fct0gqbru6
+    username: qpxtwparcprxii
+    password: 4e5ffecb1f16cb5ce5ff301e9c4aeec64ac8cab0340402e020d17b3be37fad91
     hikari:
-      schema: poc
+      maximum-pool-size: 3
 
   jpa:
     hibernate.ddl-auto: none
